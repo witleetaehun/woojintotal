@@ -1,0 +1,123 @@
+@CHARSET "UTF-8";
+	
+@import url(http://fonts.googleapis.com/earlyaccess/jejugothic.css);
+
+html,body{
+padding: 0;
+margin: 0;
+}
+ul{
+list-style: none;
+padding: 0;
+margin:0;
+}
+a{
+text-decoration: none;
+}
+
+#wrap{
+    clear: both;
+    width: 100%;
+    text-align: center;
+    overflow: hidden;
+}
+
+header{
+clear:both;
+width:1200px;
+margin:0 auto;
+margin-top:10px;
+}
+header > .logo {
+padding-top:10px;
+float:left;
+}
+header > .gnb_wrap {
+float:right;
+}
+header > .gnb_wrap > div > ul{
+float:right;
+}
+header > .gnb_wrap > div > ul > li{
+float:left;
+}
+.head_lnb > ul > li{
+	
+	padding:0 7px;
+}
+.head_lnb > ul > li:last-child{
+	padding-right:0;
+}
+.head_lnb > ul > li > a{
+font-size:10px;
+color: #a3a3a3;
+}
+.gnb > ul{
+margin-top:20px;
+}
+.gnb > ul > li{
+margin-right:50px;
+}
+.gnb > ul > li:last-child{
+	margin-right:0;
+}
+
+.gnb > ul > li > a{
+font-size:17px;
+font-weight:550;
+color:#373737;
+font-family: 'Jeju Gothic', serif;
+}
+.gnb > ul > li > a:hover{
+	color:#0f7faa;	
+}
+
+
+
+
+article{
+
+}
+
+article > section.content_head {
+	clear:both;
+	width:1200px;
+	margin:0 auto;
+	margin-top:10px;
+	position: relative;
+}
+article > section.content_head > .service_center {
+	position: absolute;
+	right:0;
+	top:0;	
+}
+
+
+
+
+
+
+
+
+
+
+footer {
+    clear: both;
+    width: 1200px;
+    margin: 0 auto;
+    margin-top: 10px;
+}
+footer .logo {
+    float: left;
+}
+footer .context {
+    float: left;
+}
+footer .context p {
+    clear: both;
+    margin: 0;
+    color: #999;
+    font-size: 11px;
+    text-align: left;
+}
+

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/camera.min.js"></script>
+<script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
+<script type="text/javascript" src="js/jquery.fitvids.js"></script>
+<script type="text/javascript" src="js/jquery.mobile.customized.min.js"></script>
+<script type="text/javascript" src="js/jquery.bxslider.min.js"></script>
+<link rel="stylesheet"  type="text/css" href="css/style.css?ver=2" />
+<link rel="stylesheet"  type="text/css" href="css/camera.css?ver=1" />
+<link rel="stylesheet"  type="text/css" href="css/jquery.bxslider.css?ver=1" />
+
+
+</head>
+
+<body>
+<script type="text/javascript">
+$(function(){
+	
+
+	jQuery('.camera_wrap').camera({ //here I declared some settings, the height and the presence of the thumbnails 
+		height: '41%',
+		pagination: false,
+		thumbnails: false ,
+		autoAdvance: true ,
+		mobileAutoAdvance: true ,
+		barPosition: 'bottom' ,
+		hover: false ,
+		loader: 'pie' 
+	});
+
+
+	 slider = $('.slider1').bxSlider({
+		    slideWidth: 200,
+		    minSlides: 2,
+		    maxSlides: 3,
+		    slideMargin: 10 ,
+		    controls: false ,
+		    pager: false
+		  });
+	 slider.startAuto();
+//jQuery('.camera_wrap').cameraPlay(); //start the slideshow
+
+});
+</script>
+<div id="wrap">
+<header>
+		<div class="logo"><a href="/"><img src="images/logo.png" width="190" height="70"></a></div>
+		
+		<div class="gnb_wrap">
+			<div class="head_lnb">
+				<ul>
+					<li><a href="/">HOME</a></li>
+					<li><img src="images/line.jpg" width="1" height="10" alt=""></li>
+					<li><a href="#">CONTACT US</a></li>
+					<li><img src="images/line.jpg" width="1" height="10" alt=""></li>
+					<li><a href="/intro/intro_05.php">ENGLISH</a></li>					
+				</ul>
+			</div>
+			<div class="gnb">
+				<ul class="gnb_tab">
+					<li><a href="/intro/intro_01.php">회사소개</a></li>
+					<li><a href="/product/product_11.php">제품소개</a></li>
+					<li><a href="/customer/customer_01.php">견적문의</a></li>
+					<li><a href="/bbs/board.php?bo_table=pds_01">자료실</a></li>
+				</ul>
+			</div>
+		
+		</div>
+</header>
+
+<article>
+	<section class="content_head">
+		<div class="slider1">		  
+		  <div class="slide"><img src="images/oil/oil-8.jpg"></div>
+		  <div class="slide"><img src="images/oil/oil-9.jpg"></div>
+		  <div class="slide"><img src="images/oil/oil-1.jpg"></div>
+		  <div class="slide"><img src="images/oil/oil-7.jpg"></div>
+		  <div class="slide"><img src="images/oil/oil-5.jpg"></div>
+		  <div class="slide"><img src="images/oil/oil-6.jpg"></div>
+		</div>
+		
+		<div class="service_center">
+			<img src="images/service.png" width="400px">
+		</div>
+	</section>
+
+	<div class="camera_wrap">
+	    <div data-src="images/slide_1.jpg"></div>
+	    <div data-src="images/slide_2.jpg"></div>
+	    <div data-src="images/slide_3.jpg"></div>
+	</div>
+</article>
+
+
+<footer>
+	<div class="logo"><img src="images/logo.png" width="160" height="60" alt=""></div>
+	<div class="context">
+		<p><span class="txtcompany">(주)청유</span> 서울특별시 광진구 자양로 18길 67-6 (구의동) | 대표자 : 홍길동 | Tel : 02)2201-6211 | Fax : 02)2201-6213</p>
+		<p> 67-6, Jayang-ro 18-gil, Gwangjin-gu, Seoul, Republic of Korea</p>
+		<p style="padding-top:10px;">Copyright (c) 2017 All rights reserved.</p>
+	</div>
+</footer>
+
+
+</div>
+</body>
+</html>
